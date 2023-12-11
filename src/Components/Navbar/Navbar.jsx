@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ScrollspyNav from "react-scrollspy-nav";
 import logo from '/public/images/logo.png';
+import Banner from "../Main/Banner";
+import About from "../Main/About";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -22,7 +24,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100 items-center justify-between mx-auto p-4 px-10 shadow-md sticky top-0 z-50">
+      <div className="navbar bg-base-100 items-center justify-between mx-auto p-4 px-24 shadow-md sticky top-0 z-50">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -68,9 +70,9 @@ const Navbar = () => {
       </div>
 
       <div>
-        <div style={{"height": "680px"}}><span>Welcome!</span></div>
-        <div id="section_1" style={{"height": "680px"}}><span>Section 1</span></div>
-        <div id="section_2" style={{"height": "680px"}}><span>Section 2</span></div>
+        <div  style={{"height": "600px"}}><span><Banner></Banner></span></div>
+        <div className="mt-10"  id="section_1" style={{"height": "100vh"}}><span></span></div>
+        <div className="mt-10" id="section_2" style={{"height": "680px"}}><span>Section 2</span></div>
       </div>
     </div>
   );
