@@ -1,7 +1,7 @@
 import img1 from '/public/images/bloodDonation.png'
 import img2 from '/public/images/bistroBoss.png'
 import img3 from '/public/images/fruitBrust.png'
-import img4 from '/public/images/donationCamp.png'
+import img4 from '/public/images/imageGallery.png'
 
 
 const RecentWorks = () => {
