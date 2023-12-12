@@ -4,6 +4,7 @@ import ScrollspyNav from "react-scrollspy-nav";
 import logo from '/public/images/logo.png';
 import Banner from "../Main/Banner";
 import About from "../Main/About";
+import Skills from "../Main/Skills/Skills";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -24,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100 items-center justify-between mx-auto p-4 px-24 shadow-md sticky top-0 z-50">
+      <div className="navbar bg-base-100 items-center justify-between mx-auto p-4  shadow-md sticky top-0 z-50">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -33,7 +34,7 @@ const Navbar = () => {
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-xl">
               <li><a href="/">Home</a></li>
               <li><a href="#section_1">About</a></li>
-              <li><a href="#section_2">Section 2</a></li>
+              <li><a href="#section_2">Skills</a></li>
               <li><a href="#section_3">Section 3</a></li>
             </ul>
           </div>
@@ -52,7 +53,7 @@ const Navbar = () => {
             <ul className="menu menu-horizontal px-1 font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 text-xl">
               <li><a href="/">Home</a></li>
               <li><a href="#section_1">About</a></li>
-              <li><a href="#section_2">Section 2</a></li>
+              <li><a href="#section_2">Skills</a></li>
               <li><a href="#section_3">Section 3</a></li>
             </ul>
           </ScrollspyNav>
@@ -71,8 +72,8 @@ const Navbar = () => {
 
       <div>
         <div  style={{"height": "600px"}}><span><Banner></Banner></span></div>
-        <div className="mt-10"  id="section_1" style={{"height": "100vh"}}><span></span></div>
-        <div className="mt-10" id="section_2" style={{"height": "680px"}}><span>Section 2</span></div>
+        <div className="mt-10"  id="section_1" style={{"height": "600px"}}><span></span><About></About></div>
+        <div id="section_2" style={{"height": "600px"}}><span> <Skills></Skills> </span></div>
       </div>
     </div>
   );
