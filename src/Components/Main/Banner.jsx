@@ -6,7 +6,7 @@ const Banner = () => {
   
   return (
     <div>
-      <div className="hero bg-base-200 relative lg:h-[80vh]">
+      <div className="hero relative lg:h-[80vh]">
         <div className="hero-content flex-col-reverse lg:flex-row-reverse">
           <div className="relative -mt-2" data-aos="fade-down"
      data-aos-easing="linear"

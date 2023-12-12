@@ -2,13 +2,14 @@ import React from 'react';
 
 const Skills = () => {
   return (
-    <section className="bg-gray-100 py-16 px-20">
+    <section className=" py-16 px-4 mt-[500px] lg:mt-0 md:px-20 md:mt-[200px]">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-purple-700 mb-8">Skills</h2>
+        <h2 className="text-3xl font-bold text-purple-700 ">Skills</h2>
+        <progress className="progress w-56 mb-8 "></progress>
 
         {/* Coding Skills */}
-        <div className="flex mb-10">
-          <div className="w-1/2 pr-8">
+        <div className="flex flex-col mb-10 md:flex-row md:space-x-8">
+          <div className="w-full md:w-1/2 md:pr-8">
             <h3 className="text-xl font-bold text-purple-700 mb-4">Coding Skills</h3>
             <div className="flex flex-col">
               {[
@@ -38,9 +39,10 @@ const Skills = () => {
               ))}
             </div>
           </div>
+       
 
           {/* Professional Skills */}
-          <div className="w-1/2 pl-8">
+          <div className="w-full md:w-1/2 md:pl-8">
             <h3 className="text-xl font-bold text-purple-700 mb-4">Professional Skills</h3>
             <div className="flex flex-col">
               {[

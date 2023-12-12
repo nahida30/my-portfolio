@@ -5,6 +5,8 @@ import logo from '/public/images/logo.png';
 import Banner from "../Main/Banner";
 import About from "../Main/About";
 import Skills from "../Main/Skills/Skills";
+import MyJourney from "../Main/MyJourney/MyJourney";
+import RecentWorks from "../Main/RecentWorks/RecentWorks";
 
 const Navbar = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -35,7 +37,8 @@ const Navbar = () => {
               <li><a href="/">Home</a></li>
               <li><a href="#section_1">About</a></li>
               <li><a href="#section_2">Skills</a></li>
-              <li><a href="#section_3">Section 3</a></li>
+              <li><a href="#section_3">My Journey</a></li>
+              <li><a href="#section_4">Recent Works</a></li>
             </ul>
           </div>
           <div className=" flex  normal-case text-xl">
@@ -44,7 +47,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ScrollspyNav
-            scrollTargetIds={["section_1", "section_2", "section_3"]}
+            scrollTargetIds={["section_1", "section_2", "section_3", "section_4"]}
             offset={100}
             activeNavClass="is-active"
             scrollDuration="1000"
@@ -54,7 +57,8 @@ const Navbar = () => {
               <li><a href="/">Home</a></li>
               <li><a href="#section_1">About</a></li>
               <li><a href="#section_2">Skills</a></li>
-              <li><a href="#section_3">Section 3</a></li>
+              <li><a href="#section_3">My Journey</a></li>
+              <li><a href="#section_4">Recent Works</a></li>
             </ul>
           </ScrollspyNav>
         </div>
@@ -72,8 +76,10 @@ const Navbar = () => {
 
       <div>
         <div  style={{"height": "600px"}}><span><Banner></Banner></span></div>
-        <div className="mt-10"  id="section_1" style={{"height": "600px"}}><span></span><About></About></div>
-        <div id="section_2" style={{"height": "600px"}}><span> <Skills></Skills> </span></div>
+        <div   id="section_1" style={{"height": "600px"}}><span></span><About></About></div>
+        <div  id="section_2" style={{"height": "600px"}}><span> <Skills></Skills> </span></div>
+        <div id="section_3" style={{"height": "600px"}}><span> <MyJourney></MyJourney> </span></div>
+        <div id="section_4" style={{"height": "600px"}}><span> <RecentWorks></RecentWorks> </span></div>
       </div>
     </div>
   );
