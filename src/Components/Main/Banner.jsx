@@ -1,6 +1,7 @@
 import img from '/public/images/s.png';
 import myImg from '/public/images/image.png';
 import Resume from './CV.pdf';
+import { Typewriter } from 'react-simple-typewriter'
 
 const Banner = () => {
   
